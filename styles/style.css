@@ -1,0 +1,96 @@
+.board{
+	margin: auto;
+	width: 800px;
+	height: 800px;
+	background-color: whitesmoke;
+	position: relative;
+
+}
+
+
+.row{
+	position: relative;
+	width: 400px;
+	height: 400px;
+}
+.row2{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.row4{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.row>div{
+	width: 100px;
+	height: 100px;
+	background-color: #212121;
+}
+.row>div:after{
+	content: '';
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background-color: lightgrey;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.row1>div:nth-child(7):after,
+.row1>div:nth-child(8):after,
+.row2>div:nth-child(7):after,
+.row2>div:nth-child(8):after,
+.row3>div:nth-child(1):after,
+.row3>div:nth-child(2):after,
+.row4>div:nth-child(1):after,
+.row4>div:nth-child(2):after{
+	display: none;
+}
+.row1>div:after, .row2>div:after{
+	background-color: #515151;
+}
+.black1{
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+.black2{
+	position: absolute;
+	left: 300px;
+	top: 0;
+}
+.black3{
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+.black4{
+	position: absolute;
+	left: 200px;
+	top: 100px;
+}
+.black5{
+	position: absolute;
+	left: 100px;
+	top: 200px;
+}
+.black6{
+	position: absolute;
+	left: 300px;
+	top: 200px;
+}
+.black7{
+	position: absolute;
+	left: 0;
+	top: 300px;
+}
+.black8{
+	position: absolute;
+	left: 200px;
+	top: 300px;
+}
